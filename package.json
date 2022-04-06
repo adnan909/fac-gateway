@@ -4,8 +4,16 @@
   "description": "first atlantic commerce payment gateway integration",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "node index.js",
-    "test": "test"
+    "test": "test",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "keywords": [
     "first",
@@ -18,9 +26,16 @@
   "author": "adnan909",
   "license": "ISC",
   "dependencies": {
+    "@types/soap": "^0.21.0",
     "soap": "^0.43.0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.12.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.6.2",
     "typescript": "^4.6.3"
   }
 }

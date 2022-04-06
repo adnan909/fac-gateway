@@ -1,8 +1,10 @@
 {
-    "compilerOptions": {
-      "outDir": "./build",
-      "allowJs": true,
-      "target": "es5"
+  "compilerOptions":
+    {
+      "target": "es2018",
+      "module": "commonjs",
+      "outDir": "dist",
     },
-    "include": ["./src/**/*"]
-  }
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+}

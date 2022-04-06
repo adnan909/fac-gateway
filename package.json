@@ -1,0 +1,26 @@
+{
+  "name": "fac-gateway",
+  "version": "1.0.0",
+  "description": "first atlantic commerce payment gateway integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "keywords": [
+    "first",
+    "atlantic",
+    "commerce",
+    "fac",
+    "payment",
+    "gateway"
+  ],
+  "author": "adnan909",
+  "license": "ISC",
+  "dependencies": {
+    "soap": "^0.43.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
